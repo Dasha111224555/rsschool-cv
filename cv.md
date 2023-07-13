@@ -18,6 +18,22 @@
   * VS Code, Sublime Text 3
   * Adobe Photoshop, Illustrator, Figma
 
+## Пример кода:
+   **Индекс массива Peak от CODEWARS:** *Учитывая массив целых чисел, верните индекс таким образом, чтобы сумма элементов справа от этого индекса равнялась сумме элементов слева от этого индекса. Если такого индекса нет, верните значение -1. Если таких индексов несколько, верните самый левый индекс.*
+   ```
+   function peak(arr) 
+   {
+
+      for (let i = 1; i < arr.length - 1; i++) {
+         let leftSum = arr.slice(0, i).reduce((accumulator, currentValue) => accumulator + currentValue);
+         let rightSum = arr.slice(i + 1).reduce((accumulator, currentValue) => accumulator + currentValue);
+         if (leftSum === rightSum) {
+            return i;
+         }
+      }
+      return -1;
+   }
+   ```
 ## Курсы: 
    * сейчас я начинаю проходить курсы английского языка в университете
    * Курс RS Schools «JavaScript / Front-end. Этап 0» (в процессе)
