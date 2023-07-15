@@ -1,2 +1,2 @@
 # rsschool-cv
-я учусь
+https://Dasha111224555.github.io/rsschool-cv/
